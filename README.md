@@ -1,5 +1,5 @@
 # SQL_Requests
-Using the SQL language to 
+Using MySQL workbench and SQL to write scripts that will retrieve and update data stored in the Sakila database as an exploration of using SQL for data storage and retrieval. 
 
 
 ## How to use:
