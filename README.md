@@ -53,3 +53,7 @@ SOURCE sakila-data.sql;
 `SOURCE` executes all the statements in a given SQL file, as SQL commands. `sakila-schema.sql` contains a number of `CREATE TABLE` statements to create the tables within our sample DB. `sakila-data.sql` contains the actual data that gets loaded into these tables.
 
 Finally, open MySQL Workbench, refresh your list of databases under the _SCHEMAS_ header, and you should see the **sakila** DB:
+
+### Using the SQL commands
+run the command: use sakila; in MySqlWorkbench. 
+This will let you access the sakila DB. From there you can copy and paste the commands from the SQL file into MySql Workbench to see what they do.
