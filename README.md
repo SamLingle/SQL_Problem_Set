@@ -21,8 +21,6 @@ source ~/.bash_profile
 
 Once resolved, you may see another error when running the \`mysql command:
 
-![access denied error](Images/access_denied_error.png)
-
 Reading this error tells us what’s wrong: we’re not using a password to connect. By default, `mysql` is also trying to use my username (dylan), but you might remember that we’re connecting to MySQL using the "root" user, instead.
 
 Run this command:
