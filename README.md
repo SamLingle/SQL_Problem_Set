@@ -1,4 +1,5 @@
 # SQL_Requests
+![Schema](https://github.com/SamLingle/SQL_Sakila_Requests/blob/master/Sakila%20requests%20Images/sakila_schema.svg)
 Using MySQL workbench and SQL to write scripts that will retrieve and update data stored in the Sakila database as an exploration of using SQL for data storage and retrieval. 
 
 ## How to use:
@@ -12,7 +13,7 @@ All queries noted in the instructions for the homework are tied to this database
 
 If you’re on a PC and used MySQL Installer to install MySQL, you may already have the Sakila database loaded. Before you do anything else, open MySQL workbench and examine the list of databases loaded on your computer:
 
-![list of databases](Images/list_of_databases.png)
+![list of databases](https://github.com/SamLingle/SQL_Sakila_Requests/blob/master/Sakila%20requests%20Images/All_Schemas.png)
 
 If the **sakila** DB is on this list, congrats! You can run
 
@@ -20,19 +21,17 @@ If the **sakila** DB is on this list, congrats! You can run
 use sakila;
 ```
 
-and start the homework. Otherwise, read on.
+Otherwise, read on.
 
 ## Download the Sakila DB
 
 Visit [this page](https://dev.mysql.com/doc/index-other.html) and find the "sakila database" under the _Example Databases_ header:
 
-![example databases](Images/example_dbs.png)
-
 Click on the ["Zip" link](http://downloads.mysql.com/docs/sakila-db.zip) to download. This contains a zipped directory of all the files required to load the sample database.
 
 On your computer, open the zip file, and **cd into the sakila-db directory that gets unzipped**. You should see three files:
 
-![three sakila files](Images/three_sakila_files.png)
+![three sakila files](https://github.com/SamLingle/SQL_Sakila_Requests/blob/master/Sakila%20requests%20Images/three_files.png)
 
 At this point, you’re ready to load the sample database into MySQL.
 
@@ -57,7 +56,7 @@ source ~/.bash_profile
 
 Once resolved, you should see another error when running the \`mysql command:
 
-![access denied error](Images/access_denied_error.png)
+![access denied error](https://github.com/SamLingle/SQL_Sakila_Requests/blob/master/Sakila%20requests%20Images/Once_resolved.png)
 
 Reading this error tells us what’s wrong: we’re not using a password to connect. By default, `mysql` is also trying to use my username (dylan), but you might remember that we’re connecting to MySQL using the "root" user, instead.
 
@@ -69,7 +68,7 @@ mysql -u root -p
 
 and enter your root user password that you generated as part of class. After you enter the password, you should see a prompt like this:
 
-![mysql prompt](Images/mysql_prompt.png)
+![mysql prompt](https://github.com/SamLingle/SQL_Sakila_Requests/blob/master/Sakila%20requests%20Images/prompt.png)
 
 The next commands we run assume that you’re in the _sakila-db_ directory you unzipped earlier. If you’re not there, exit `mysql` by running the command:
 
@@ -93,6 +92,7 @@ SOURCE sakila-data.sql;
 `SOURCE` executes all the statements in a given SQL file, as SQL commands. `sakila-schema.sql` contains a number of `CREATE TABLE` statements to create the tables within our sample DB. `sakila-data.sql` contains the actual data that gets loaded into these tables.
 
 Finally, open MySQL Workbench, refresh your list of databases under the _SCHEMAS_ header, and you should see the **sakila** DB:
+![Schemas](https://github.com/SamLingle/SQL_Sakila_Requests/blob/master/Sakila%20requests%20Images/Schemas-w:sakila.png)
 
 ## Commands:
 1a. Display the first and last names of all actors from the table actor.
@@ -153,7 +153,7 @@ Finally, open MySQL Workbench, refresh your list of databases under the _SCHEMAS
 ![6c](https://github.com/SamLingle/SQL_Sakila_Requests/blob/master/Sakila%20requests%20Images/6c.png)
 
 6d. How many copies of the film Hunchback Impossible exist in the inventory system?
-
+![6d](https://github.com/SamLingle/SQL_Sakila_Requests/blob/master/Sakila%20requests%20Images/6d.png)
 6e. Using the tables payment and customer and the JOIN command, list the total paid by each customer. List the customers alphabetically by last name:
 ![6e](https://github.com/SamLingle/SQL_Sakila_Requests/blob/master/Sakila%20requests%20Images/6e.png)
 
@@ -189,4 +189,4 @@ Finally, open MySQL Workbench, refresh your list of databases under the _SCHEMAS
 8b. How would you display the view that you created in 8a?
 ![8b](https://github.com/SamLingle/SQL_Sakila_Requests/blob/master/Sakila%20requests%20Images/8b.png)
 8c. You find that you no longer need the view top_five_genres. Write a query to delete it.
-
+![8c](https://github.com/SamLingle/SQL_Sakila_Requests/blob/master/Sakila%20requests%20Images/8c.png)
